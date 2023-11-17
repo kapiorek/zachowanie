@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Obliczanie punktów</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    select, input, button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  
+  <label for="startowePunkty">Podaj startową liczbę punktów:</label>
+  <input type="number" id="startowePunkty" min="0">
+
+
+  <select id="listaPrzewinien"></select>
+
+
+  <div>
+    <label for="aktualnePunkty">Aktualna liczba punktów:</label>
+    <input type="text" id="aktualnePunkty" disabled>
+  </div>
+
+
+  <button onclick="obliczPunkty()">Oblicz punkty</button>
+
+  <script src="java.js"></script>
+</body>
+</html>
